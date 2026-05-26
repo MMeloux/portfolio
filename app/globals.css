@@ -62,3 +62,9 @@
   --radius-lg: 16px;
   --radius-xl: 24px;
 }
+
+/* Encadeia Inter (next/font) ao --font-sans fora do @theme,
+   já que o Tailwind v4 strippa var() externos dentro do @theme. */
+:root {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
