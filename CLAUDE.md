@@ -403,3 +403,4 @@ Lugar para registrar decisões que tomamos durante o projeto, com data e razão.
 - **2026-05 — Sem cor de destaque global:** identidade vem de tipografia, espaço e cinzas. Cor sutil apenas nos cards de case.
 - **2026-05 — Sections âncora escuras:** hero e footer em fundo escuro, resto do site claro.
 - **2026-05 — Tempo de carreira não aparece no site:** decisão consciente. Maturidade demonstrada pelo conteúdo dos cases.
+- **2026-05 — Adiada a Nav adaptativa:** testes mostraram que nenhuma das abordagens (transparente, glassmorphism, bg-ink sólido) chegou a um resultado satisfatório sobre a Hero escura. Decisão de manter a Nav simples (paper translúcido + ink) por ora e revisitar no polimento da Fase 4.
