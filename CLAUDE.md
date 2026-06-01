@@ -99,6 +99,8 @@ Proposta de valor: Product Designer que transita por todas as etapas do processo
 | "Apaixonado por design" | (cortar — não diz nada) |
 | "Sempre gostei de pessoas e tecnologia" | (cortar — clichê de transição) |
 | "Há X anos atuando em UX" | (cortar — tempo não entra) |
+| Travessão em texto corrido | Pontuação alternativa (ponto, vírgula, ponto e vírgula) |
+| Hífen (-) em atribuição de quote | Travessão longo (—) em atribuição de quote |
 
 ### 2.5 Frase de posicionamento (hero)
 
@@ -108,6 +110,18 @@ Duas linhas em paralelo, com peso visual equivalente, em fundo escuro:
 > **Resultados que confirmam.**
 
 Quebra forçada de linha (não dependente de largura).
+
+### 2.6 Princípios editoriais dos cases
+
+Regras consolidadas a partir das auditorias editoriais (Netflix, Premium League). Aplicam-se a todos os cases.
+
+1. **Cases conceituais identificados como tais no hero** — via badge "Estudo" ou subtítulo. Não inflar projeto de estudo como projeto real.
+2. **Dados qualitativos não viram métricas de negócio** — citações e observações de teste de usabilidade são tratadas como evidência qualitativa, não como número de conversão.
+3. **Não afirmar impacto não medido** — claims como "reduziu tempo de escolha" só se houve medição antes/depois real.
+4. **Sub-cabeçalhos com causalidade, não rótulos** — "01 — O que o mercado já dizia" (correto) > "Mercado" (genérico).
+5. **"Participante do teste" como padrão de atribuição** — não usar "usuário do teste" ou variações.
+6. **Título e subtítulo do case por último** — fechar título depois do corpo validado. O título ancora no conteúdo real, não em hipótese.
+7. **Travessões com uso restrito** — substituir por ponto, vírgula ou ponto e vírgula em texto corrido. Exceção única: atribuição de quotes de participantes.
 
 ---
 
@@ -391,7 +405,7 @@ Documentar para contexto. Não copiar literalmente:
 | Netflix | Estudo | Qualitativos + questionário + teste de usabilidade | Resultados |
 | Premium League | Real | Antes/depois + teste de usabilidade | Resultados |
 
-Conteúdo a ser produzido na Fase 3 (não inventar agora).
+Conteúdo editorial refinado vive em `docs/cases/[slug].md` (ex: `docs/cases/netflix.md`, `docs/cases/premium-league.md`). O agente deve ler o arquivo correspondente como fonte da verdade antes de implementar a página de um case. Não improvisar conteúdo nem reinterpretar — o refinamento editorial já foi feito.
 
 ---
 
@@ -404,3 +418,6 @@ Lugar para registrar decisões que tomamos durante o projeto, com data e razão.
 - **2026-05 — Sections âncora escuras:** hero e footer em fundo escuro, resto do site claro.
 - **2026-05 — Tempo de carreira não aparece no site:** decisão consciente. Maturidade demonstrada pelo conteúdo dos cases.
 - **2026-05 — Adiada a Nav adaptativa:** testes mostraram que nenhuma das abordagens (transparente, glassmorphism, bg-ink sólido) chegou a um resultado satisfatório sobre a Hero escura. Decisão de manter a Nav simples (paper translúcido + ink) por ora e revisitar no polimento da Fase 4.
+- **2026-06 — Auditoria editorial do Netflix e Premium League concluída.** Conteúdo final em `docs/cases/[slug].md`.
+- **2026-06 — Travessões evitados em texto corrido,** exceto atribuição de quotes (travessão longo —).
+- **2026-06 — Princípios editoriais consolidados na seção 2.6,** aplicáveis a todos os cases futuros.
