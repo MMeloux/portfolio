@@ -178,6 +178,8 @@ Estratégica. É onde a narrativa de transição é apresentada de forma afirmat
 
 ### 3.4 Página de Case (`/cases/[slug]`)
 
+**Background:** toda a página de case é integralmente clara (fundo `paper`), incluindo o hero do case. As únicas sections escuras do site são o hero da home e o footer.
+
 Estrutura padrão. Para cases com dado (Netflix, Premium League), abrir com Resultados:
 
 1. **Hero do case** — mockup composto + título + métrica/resultado principal.
@@ -403,7 +405,7 @@ Documentar para contexto. Não copiar literalmente:
 | Case | Tipo | Dados | Abertura |
 |---|---|---|---|
 | Netflix | Estudo | Qualitativos + questionário + teste de usabilidade | Resultados |
-| Premium League | Real | Antes/depois + teste de usabilidade | Resultados |
+| Premium League | Real | Antes/depois + teste de usabilidade | Desafio |
 
 Conteúdo editorial refinado vive em `docs/cases/[slug].md` (ex: `docs/cases/netflix.md`, `docs/cases/premium-league.md`). O agente deve ler o arquivo correspondente como fonte da verdade antes de implementar a página de um case. Não improvisar conteúdo nem reinterpretar — o refinamento editorial já foi feito.
 
@@ -421,3 +423,5 @@ Lugar para registrar decisões que tomamos durante o projeto, com data e razão.
 - **2026-06 — Auditoria editorial do Netflix e Premium League concluída.** Conteúdo final em `docs/cases/[slug].md`.
 - **2026-06 — Travessões evitados em texto corrido,** exceto atribuição de quotes (travessão longo —).
 - **2026-06 — Princípios editoriais consolidados na seção 2.6,** aplicáveis a todos os cases futuros.
+- **2026-06 — Abertura do Premium League muda para Desafio:** o case não tem métricas numéricas consolidadas no momento. Abrir com Resultados seria inflação de evidência. Reavaliar quando o conteúdo estiver maduro.
+- **2026-06 — Páginas de case são integralmente claras:** fundo `paper` em toda a página, incluindo o hero do case. Seções escuras são exclusividade da home (hero) e do footer.
