@@ -425,3 +425,11 @@ Lugar para registrar decisões que tomamos durante o projeto, com data e razão.
 - **2026-06 — Princípios editoriais consolidados na seção 2.6,** aplicáveis a todos os cases futuros.
 - **2026-06 — Abertura do Premium League muda para Desafio:** o case não tem métricas numéricas consolidadas no momento. Abrir com Resultados seria inflação de evidência. Reavaliar quando o conteúdo estiver maduro.
 - **2026-06 — Páginas de case são integralmente claras:** fundo `paper` em toda a página, incluindo o hero do case. Seções escuras são exclusividade da home (hero) e do footer.
+
+---
+
+## 11. Dívida técnica
+
+Decisões pragmáticas que precisam ser revisitadas em fases futuras.
+
+- **2026-06 — Escala tipográfica do DS precisa ser reconciliada na Fase 4.** Token `--text-case-title` (56px) criado fora da tabela original da seção 4.2 para o título do hero de case. Revisar tamanhos de título (h1, h2, case-title, display) quando consolidar a escala — possivelmente promover `case-title` para `h1` e renumerar os demais.
