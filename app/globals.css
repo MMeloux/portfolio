@@ -22,6 +22,7 @@
   --text-h2: 1.75rem;
   --text-h3: 1.25rem;
   --text-metric: 3.5rem;
+  --text-case-title: 3.5rem;
   --text-body-lg: 1.125rem;
   --text-body: 1rem;
   --text-body-sm: 0.875rem;
@@ -30,6 +31,7 @@
   /* Tracking (letter-spacing) */
   --tracking-display: -0.03em;
   --tracking-h1: -0.03em;
+  --tracking-case-title: -0.03em;
   --tracking-metric: -0.04em;
   --tracking-h2: -0.02em;
   --tracking-h3: -0.02em;
@@ -79,6 +81,27 @@
    já que o Tailwind v4 strippa var() externos dentro do @theme. */
 :root {
   --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+/* ─── Utilitários ────────────────────────────────────── */
+
+/* Grid de N colunas com largura própria, alinhadas à esquerda no desktop;
+   1 coluna empilhada no mobile.
+   N vem da CSS variable --meta-cols, setada inline no elemento.
+   Gap usa os tokens --spacing-6 (mobile) e --spacing-12 (desktop).
+   Usada em CaseMeta para a faixa "Visão geral". */
+.case-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-6);
+}
+
+@media (min-width: 768px) {
+  .case-meta-grid {
+    grid-template-columns: repeat(var(--meta-cols), minmax(180px, max-content));
+    justify-content: start;
+    gap: var(--spacing-16);
+  }
 }
 
 html {
