@@ -3,6 +3,9 @@
 
 import CaseHero from "@/components/CaseHero"
 import CaseMeta from "@/components/CaseMeta"
+import CaseSection from "@/components/CaseSection"
+import MetricBlock from "@/components/MetricBlock"
+import Quote from "@/components/Quote"
 import ArtefatoPlaceholder from "@/components/ArtefatoPlaceholder"
 
 export default function PreviewPage() {
@@ -25,6 +28,39 @@ export default function PreviewPage() {
           { label: "Duração", valor: "6 meses" },
         ]}
       />
+
+      {/* 3. O Desafio — CaseSection com parágrafo simples */}
+      <CaseSection titulo="O Desafio">
+        <p className="text-body-lg leading-body-lg text-gray-900 max-w-[720px]">
+          Frequentemente as pessoas passam mais tempo escolhendo o que assistir do que de fato assistindo. Antes de propor uma solução, era preciso entender se essa dor era comum, como ela aparecia na rotina e qual o impacto para o negócio.
+        </p>
+      </CaseSection>
+
+      {/* 4. Resultados — três MetricBlock lado a lado + Quote */}
+      <CaseSection titulo="Resultados">
+        {/* Distribuição provisória só para o preview — decidiremos a final depois */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          <MetricBlock
+            numero="80%"
+            descricao="declararam intenção de uso semanal"
+            contexto="Validado em teste de usabilidade com 26 usuários"
+          />
+          <MetricBlock
+            numero="100%"
+            descricao="completaram o fluxo principal"
+            contexto="Validado em teste de usabilidade com 26 usuários"
+          />
+          <MetricBlock
+            numero="4,5/5"
+            descricao="de satisfação média (CSAT)"
+            contexto="Validado em teste de usabilidade com 26 usuários"
+          />
+        </div>
+        <Quote
+          texto="Acabou a novela para escolher filme. Eu usaria muito isso, ajuda a resolver o impasse."
+          atribuicao="participante do teste"
+        />
+      </CaseSection>
 
       {/* Placeholders soltos para inspeção visual do componente isolado */}
       <div className="bg-paper px-6 md:px-12 pb-16 pt-8">
