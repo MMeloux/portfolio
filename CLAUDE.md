@@ -432,4 +432,4 @@ Lugar para registrar decisões que tomamos durante o projeto, com data e razão.
 
 Decisões pragmáticas que precisam ser revisitadas em fases futuras.
 
-- **2026-06 — Escala tipográfica do DS precisa ser reconciliada na Fase 4.** Token `--text-case-title` (56px) criado fora da tabela original da seção 4.2 para o título do hero de case. Revisar tamanhos de título (h1, h2, case-title, display) quando consolidar a escala — possivelmente promover `case-title` para `h1` e renumerar os demais.
+- **2026-06 — Escala tipográfica do DS precisa ser reconciliada na Fase 4.** Token `--text-case-title` (56px) criado fora da tabela original da seção 4.2 para o título do hero de case. Em seguida, `--text-metric` foi reduzido de 56px para 40px no `globals.css` para eliminar a colisão de valor com `--text-case-title` e criar hierarquia clara nos resultados (título de case > métricas). Escala de título efetiva hoje: `case-title` 56px > `metric` / `h1` 40px > `h2` 28px > `h3` 20px. A tabela da seção 4.2 ainda registra `metric` como 56px — essa dessincronia é intencional e será reconciliada na Fase 4, possivelmente promovendo `case-title` para `h1` e renumerando os demais.
